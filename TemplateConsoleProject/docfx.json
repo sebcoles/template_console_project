@@ -1,0 +1,31 @@
+﻿{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [ "**/*.csproj" ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "src": "../"
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [ "api/*.yml" ]
+      }
+    ],
+    "globalMetadata": {
+      "_appTitle": "DocFX website",
+      "_gitContribute": {
+        "repo": "https://github.com/org/repo",
+        "branch": "dev",
+        "apiSpecFolder": "docs-ref-overwrite"
+      }
+    },
+    "dest": "_site",
+    "template": "statictoc"
+  }
+}
